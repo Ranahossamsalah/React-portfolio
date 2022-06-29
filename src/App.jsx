@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/counter" element={<Counter />}></Route>
         <Route path="/ecommerce" element={<Ecommerce />}></Route>
-        <Route path="/ecommerce/singleproduct" element={<Singleproduct />}></Route>
+        <Route path="/ecommerce/:id" element={<Singleproduct />}></Route>
       </Routes>
     </BrowserRouter>
   );
