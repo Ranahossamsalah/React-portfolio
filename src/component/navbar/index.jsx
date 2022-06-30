@@ -11,11 +11,36 @@ function CollapsibleExample() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
-            <li><Link className="text-warning fs-7 p-3 "   to="/home">Home</Link></li>
-            <li><Link   className="text-warning fs-7 p-3 "  to="/about">About</Link></li>
-            <li><Link  className="text-warning fs-7 p-3"  to="/contact">contact</Link></li>
-            <li><Link  className="text-warning fs-7 p-3"  to="/ecommerce">E-commerce</Link></li>
-            <li><Link  className="text-warning fs-7 p-3"  to="/counter">Counter</Link></li>
+            <li>
+              <Link className="text-warning fs-7 p-3 " to="/home">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="text-warning fs-7 p-3 " to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="text-warning fs-7 p-3" to="/contact">
+                contact
+              </Link>
+            </li>
+            <li>
+              <Link className="text-warning fs-7 p-3" to="/ecommerce">
+                E-commerce
+              </Link>
+            </li>
+            <li>
+              <Link className="text-warning fs-7 p-3" to="/counter">
+                Counter
+              </Link>
+            </li>
+            <li>
+              <Link className="text-warning fs-7 p-3" to="/todo">
+                To-Do
+              </Link>
+            </li>
           </Nav>
         </Navbar.Collapse>
       </Container>

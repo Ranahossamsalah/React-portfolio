@@ -7,11 +7,12 @@ import About from "./pages/about";
 import Contact from "./pages/contact";
 import Ecommerce from "./pages/e-commerce";
 import Singleproduct from "./pages/e-commerce/single-product";
+import Todo from "./pages/todo/Todo";
 
 function App() {
   return (
     <BrowserRouter>
-     <FixedNavbar />
+      <FixedNavbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
@@ -20,6 +21,8 @@ function App() {
         <Route path="/counter" element={<Counter />}></Route>
         <Route path="/ecommerce" element={<Ecommerce />}></Route>
         <Route path="/ecommerce/:id" element={<Singleproduct />}></Route>
+        <Route path="/todo" element={<Todo />}></Route>
+
       </Routes>
     </BrowserRouter>
   );
