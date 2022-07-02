@@ -4,8 +4,7 @@ import TodoForm from "../../component/todo/TodoForm";
 import TodoList from "../../component/todo/TodoList";
 import "./Todo.css";
 // import { addtodoaction, delatetodoaction } from "../../redux/config";
-import addtodo  from '../../redux/features/todoslice'
-import delatetodo  from '../../redux/features/todoslice'
+import {addtodo,DeleteTodo}  from '../../redux/features/todoslice'
 
 function Todo() {
   const todos = useSelector((state) => state.todo.todos);
@@ -14,12 +13,12 @@ function Todo() {
     dispatch(addtodo(task));
   };
   const ondeleteTodo = (index) => {
-    dispatch(delatetodo(index));
+    dispatch(DeleteTodo(index));
   };
   return (
     <div className="text-center py-2 todo-wrapper container">
       <TodoForm addTodo={onaddTodo} />
-      <TodoList todos={todos} delatetodo={ondeleteTodo} />
+      <TodoList todos={todos} DeleteTodo={ondeleteTodo} />
     </div>
   );
 }

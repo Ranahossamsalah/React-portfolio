@@ -1,4 +1,4 @@
-const TodoList = ({ todos, deleteTodo }) => {
+const TodoList = ({ todos, DeleteTodo }) => {
   const todosList =
     todos && todos.length > 0 ? (
       todos.map((todo, i) => {
@@ -12,7 +12,7 @@ const TodoList = ({ todos, deleteTodo }) => {
                 </div>
               </li>
             </ul>
-            <button className="btn-warning" onClick={() => deleteTodo(i)}>
+            <button className="btn-warning" onClick={() => DeleteTodo(i)}>
               x
             </button>
           </div>

@@ -6,11 +6,11 @@ export const delatetodoaction = (payload) => {
   return { type: "DELATE_TODO", payload };
 };
 //initial state
-const initialstate = {
+const initialState = {
   todos: [],
 };
 //reducer
-export const todoreducer = (state = initialstate, action) => {
+export const todoreducer = (state = initialState, action) => {
   if (action.type === "ADD_TODO") {
     return { ...state, todos: [...state.todos, action.payload] };
   }
