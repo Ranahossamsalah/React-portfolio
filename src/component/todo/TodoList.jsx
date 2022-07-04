@@ -3,8 +3,8 @@ const TodoList = ({ todos, DeleteTodo }) => {
     todos && todos.length > 0 ? (
       todos.map((todo, i) => {
         return (
-          <div key={i} >
-            <ul >
+          <div key={i}>
+            <ul className="w-50 mx-auto">
               <li className="border d-flex">
                 <div className="text">
                   <p>Title : {todo.title}</p>
@@ -12,7 +12,7 @@ const TodoList = ({ todos, DeleteTodo }) => {
                 </div>
               </li>
             </ul>
-            <button className="btn-warning" onClick={() => DeleteTodo(i)}>
+            <button className="btn-warning w-25" onClick={() => DeleteTodo(i)}>
               x
             </button>
           </div>

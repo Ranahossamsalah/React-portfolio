@@ -18,12 +18,7 @@ function CollapsibleExample() {
             </li>
             <li>
               <Link className="text-warning fs-7 p-3 " to="/signup">
-              SignUp
-              </Link>
-            </li>
-            <li>
-              <Link className="text-warning fs-7 p-3" to="/contact">
-                contact
+                SignUp
               </Link>
             </li>
             <li>

@@ -13,11 +13,12 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <div>
-      <h3 className="text-muted mb-4">Add a TODO</h3>
+      <h3 className="text-muted mb-4 bg-light">Add a TODO</h3>
 
-      <form onSubmit={handleSubmission}>
+      <form className="border w-50 mx-auto" onSubmit={handleSubmission}>
         Title <br />
         <input
+          className="w-50"
           type="text"
           name="title"
           value={title}
@@ -26,12 +27,16 @@ const TodoForm = ({ addTodo }) => {
         <br />
         Content <br />
         <textarea
+          className="w-50 "
           name="content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
         ></textarea>
         <br />
-        <button className="my-4 btn btn-primary  btn-sm px-4" type="submit">
+        <button
+          className="my-4 btn btn-warning w-50  btn-sm px-4"
+          type="submit"
+        >
           Add Todo
         </button>
       </form>
