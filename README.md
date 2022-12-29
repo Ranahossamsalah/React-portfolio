@@ -1,8 +1,6 @@
 # React-Portfolio
 
-see the project live : 
-
-https://endearing-figolla-3580da.netlify.app/
+show the project live : https://endearing-figolla-3580da.netlify.app/
 
 My react portfolio app contains different sections || Reactjs 
 
